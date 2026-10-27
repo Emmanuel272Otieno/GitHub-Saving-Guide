@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginner-friendly guide to saving projects using Git and GitHub.">
+    <title>GitHub Saving Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Git<span>Hub</span> Guide</a>
+            <button id="themeBtn" class="theme-btn">🌙 Dark Mode</button>
+        </nav>
+
+        <section class="hero">
+            <p class="eyebrow">LEARN • CODE • SAVE • SHARE</p>
+            <h1>Steps for Saving Work in GitHub</h1>
+            <p>
+                Learn how to save your coding projects, track changes,
+                and upload your work to GitHub step by step.
+            </p>
+            <a href="#steps" class="primary-btn">Start Learning ↓</a>
+        </section>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Your GitHub Workflow</h2>
+            <p>Follow these steps in order to save your project online.</p>
+
+            <div class="workflow">
+                <div class="workflow-item">1. Install Git</div>
+                <span>↓</span>
+                <div class="workflow-item">2. Initialize Repository</div>
+                <span>↓</span>
+                <div class="workflow-item">3. Add Files</div>
+                <span>↓</span>
+                <div class="workflow-item">4. Commit Changes</div>
+                <span>↓</span>
+                <div class="workflow-item">5. Create GitHub Repository</div>
+                <span>↓</span>
+                <div class="workflow-item">6. Link Remote Repository</div>
+                <span>↓</span>
+                <div class="workflow-item">7. Push Changes</div>
+                <span>↓</span>
+                <div class="workflow-item">8. Verify on GitHub</div>
+            </div>
+        </section>
+
+        <section id="steps" class="steps-section">
+            <h2>Eight Steps to Save Your Work</h2>
+            <p class="section-description">
+                Read each step and mark it complete when you finish.
+            </p>
+
+            <div class="progress-area">
+                <div class="progress-info">
+                    <span>Your learning progress</span>
+                    <span id="progressText">0 of 8 completed</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="steps-grid">
+
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Install Git</h3>
+                    <p>Check whether Git is installed on your computer.</p>
+                    <pre><code>git --version</code></pre>
+                    <p class="tip">If Git is missing, install it from git-scm.com.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Initialize a Repository</h3>
+                    <p>Open your project folder in the VS Code terminal.</p>
+                    <pre><code>git init</code></pre>
+                    <p class="tip">This creates a local Git repository.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Add Your Files</h3>
+                    <p>Stage your project files so Git can include them in a commit.</p>
+                    <pre><code>git add .</code></pre>
+                    <p class="tip">Use <code>git add filename</code> for one file.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">04</span>
+                    <h3>Commit Changes</h3>
+                    <p>Save a snapshot of your staged changes locally.</p>
+                    <pre><code>git commit -m "Initial commit"</code></pre>
+                    <p class="tip">Write a clear message describing your changes.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">05</span>
+                    <h3>Create a GitHub Repository</h3>
+                    <p>Sign in to GitHub, create a new repository, and copy its URL.</p>
+                    <a class="text-link" href="https://github.com/new" target="_blank" rel="noopener noreferrer">
+                        Create a repository ↗
+                    </a>
+                    <p class="tip">For this workflow, create an empty repository without a README.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">06</span>
+                    <h3>Link the Remote Repository</h3>
+                    <p>Replace the example URL with your own GitHub repository URL.</p>
+                    <pre><code>git remote add origin https://github.com/USERNAME/REPOSITORY.git</code></pre>
+                    <button class="copy-btn" data-copy="git remote add origin https://github.com/USERNAME/REPOSITORY.git">
+                        Copy command
+                    </button>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">07</span>
+                    <h3>Push Changes</h3>
+                    <p>Set your branch to main and upload your committed work.</p>
+                    <pre><code>git branch -M main
+git push -u origin main</code></pre>
+                    <button class="copy-btn" data-copy="git branch -M main&#10;git push -u origin main">
+                        Copy commands
+                    </button>
+                    <p class="tip">Sign in to GitHub when prompted. You need permission to push.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">08</span>
+                    <h3>Verify on GitHub</h3>
+                    <p>Open your repository page and check that your files appear.</p>
+                    <a class="text-link" href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        Open GitHub ↗
+                    </a>
+                    <p class="tip">Check the repository name and uploaded files.</p>
+                    <label class="complete-label">
+                        <input type="checkbox" class="step-check">
+                        Mark as completed
+                    </label>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="commands-section">
+            <h2>Saving Future Changes</h2>
+            <p>Whenever you edit your project, use this workflow:</p>
+            <pre><code>git add .
+git commit -m "Describe your changes"
+git push</code></pre>
+            <button class="copy-btn" data-copy="git add .&#10;git commit -m &quot;Describe your changes&quot;&#10;git push">
+                Copy workflow
+            </button>
+        </section>
+
+        <section class="tip-box">
+            <h2>💡 Important Tips</h2>
+            <ul>
+                <li>Always open the terminal in the correct project folder.</li>
+                <li>Use meaningful commit messages.</li>
+                <li>Never upload passwords, API keys, or private information.</li>
+                <li>If Git says a remote named <code>origin</code> already exists, check it with <code>git remote -v</code>.</li>
+                <li>If you receive a permission error, check that you are using the correct GitHub account.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 GitHub Saving Guide | Learn • Build • Grow 🚀</p>
+        <button id="topBtn" class="primary-btn">Back to Top ↑</button>
+    </footer>
+
+    <div id="notification" class="notification" role="status" aria-live="polite"></div>
+
+</body>
+</html>
